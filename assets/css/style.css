@@ -30,6 +30,10 @@ h3 {
   font-weight: 700;
 }
 
+a {
+  cursor: pointer;
+}
+
 /* Reusable Comonents */
 
 .row {
@@ -122,8 +126,10 @@ nav {
   text-transform: uppercase;
   text-align: center;
   margin-left: 3rem;
-  animation: 2.7s slideInUpDelay;
+  animation: 2.3s slideInUpDelay;
 }
+
+
 
 
 @-webkit-keyframes slideInRightFood {
@@ -270,17 +276,42 @@ nav {
   }
 }
 
+
+
+
+@keyframes upDown {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
+  60% {
+
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
 .scroll_down {
   position: absolute;
   z-index: 3;
-  bottom: 20px;
+  bottom: 55px;
   left: 50%;
   margin-left: -16px;
   width: 32px;
-  height: 32px;
+  height: 20px;
   font-size: 32px;
   text-align: center;
   color: rgb(255, 255, 255);
+  animation: 2s upDown infinite;
 }
 
 .icon-scroll_down:before {
