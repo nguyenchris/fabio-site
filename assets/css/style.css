@@ -1,0 +1,149 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', sans-serif;
+  /* font-family: 'Rubik', sans-serif; */
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  padding: 0;
+  background-color: #1B1B1B
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+/* Reusable Comonents */
+
+.row {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 80px 0;
+}
+
+
+/* ======== */
+
+
+header {
+  height: 100vh;
+  position: relative;
+}
+
+
+nav {
+  /* background-color: yellow; */
+  letter-spacing: .8px;
+  word-spacing: -1px;
+  padding: 1.5rem 0;
+  position: fixed;
+  width: 100%;
+  /* opacity: .8; */
+}
+
+.header .nav-name {
+  vertical-align: middle;
+  margin-left: 12px;
+  padding-top: 11px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.header .nav-name span {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.nav-icon {
+  width: 2.7%;
+  vertical-align: middle;
+} 
+
+/* Logo */
+
+.header__logo-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-63%, -50%);
+  text-align: center;
+}
+
+.header__logo-box .icon-logo {
+  width: 45px;
+  position: absolute;
+  right: -70px
+}
+
+.header__logo-box #icon-chef{
+  width: 55px;
+  top: 10px;
+}
+
+.header__logo-box #icon-food{
+  width: 55px;
+  top: 40%;
+  opacity: .8;
+}
+
+
+.header__logo-box #icon-utensils{
+  width: 65px;
+  bottom: 5%;
+  right: -77px;
+}
+
+
+
+
+
+.header__logo-box h2 {
+  letter-spacing: 1rem;
+  font-size: 4rem;
+  margin-top: .8rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 3rem;
+}
+
+
+@keyframes move-chef {
+  
+}
+
+.scroll_down {
+  position: absolute;
+  z-index: 3;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -16px;
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.icon-scroll_down:before {
+  /* content: \e7a7" */
+}
