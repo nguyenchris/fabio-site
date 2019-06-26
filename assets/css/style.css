@@ -104,19 +104,21 @@ nav {
 .header__logo-box #icon-chef {
   width: 55px;
   top: 10px;
+  animation: 1.5s slideInRight;
 }
 
 .header__logo-box #icon-food {
   width: 55px;
   top: 40%;
   opacity: 0.8;
-  animation: 1.3s slideInRightFood;
+  animation: 2s slideInRightFood;
 }
 
 .header__logo-box #icon-utensils {
   width: 65px;
   bottom: 5%;
   right: -77px;
+  animation: 2.8s slideInRight;
 }
 
 .header__logo-box h2 {
@@ -132,10 +134,49 @@ nav {
 
 
 
+.section-meals {
+  padding: 0;
+}
+
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.meal-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+
+
+
+
 @-webkit-keyframes slideInRightFood {
   0% {
-    -webkit-transform: translate3d(130%, 0, 0);
-    transform: translate3d(130%, 0, 0);
+    -webkit-transform: translate3d(215%, 0, 0);
+    transform: translate3d(215%, 0, 0);
     opacity: 0;
   }
 
@@ -149,8 +190,8 @@ nav {
 
 @keyframes slideInRightFood {
   0% {
-    -webkit-transform: translate3d(130%, 0, 0);
-    transform: translate3d(130%, 0, 0);
+    -webkit-transform: translate3d(215%, 0, 0);
+    transform: translate3d(215%, 0, 0);
     opacity: 0;
   }
 
@@ -164,10 +205,43 @@ nav {
 
 
 
+
+@-webkit-keyframes slideInRightUtensils {
+  0% {
+    -webkit-transform: translate3d(250%, 0, 0);
+    transform: translate3d(250%, 0, 0);
+    opacity: 0;
+  }
+
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRightUtensils {
+  0% {
+    -webkit-transform: translate3d(250%, 0, 0);
+    transform: translate3d(250%, 0, 0);
+    opacity: 0;
+  }
+
+
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+
+
 @-webkit-keyframes slideInRight {
   0% {
-    -webkit-transform: translate3d(130%, 0, 0);
-    transform: translate3d(130%, 0, 0);
+    -webkit-transform: translate3d(180%, 0, 0);
+    transform: translate3d(180%, 0, 0);
     opacity: 0;
   }
 
@@ -181,8 +255,8 @@ nav {
 
 @keyframes slideInRight {
   0% {
-    -webkit-transform: translate3d(130%, 0, 0);
-    transform: translate3d(130%, 0, 0);
+    -webkit-transform: translate3d(180%, 0, 0);
+    transform: translate3d(180%, 0, 0);
     opacity: 0;
   }
 
