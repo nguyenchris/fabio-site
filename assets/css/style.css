@@ -450,7 +450,7 @@ and (-webkit-device-pixel-ratio : 3)
 and (orientation : portrait) {
 
   .scroll_down {
-    bottom: 20%;
+    bottom: 21.5%;
   }
 
  }
