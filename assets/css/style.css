@@ -440,6 +440,20 @@ section.section-contact {
     bottom: 10%;
   }
 }
+
+
+/* iPhone X and XS */
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : portrait) {
+
+  .scroll_down {
+    bottom: 20%;
+  }
+
+ }
 .contact-info-row:first-child {
   margin-top: 20px;
 }
