@@ -53,9 +53,7 @@ h3 {
   width: 100px;
   margin: 25px auto 0;
 }
-a {
-  cursor: pointer;
-}
+
 .row {
   max-width: 1280px;
   margin: 0 auto;
@@ -383,38 +381,7 @@ section.section-contact {
   }
 }
 @media only screen and (max-width: 780px) {
-  .header__logo-box img {
-    width: 90%;
-  }
-  .header__logo-box h2 {
-    margin-left: 18px;
-    font-size: 2.3rem;
-  }
-  .header__logo-box .icon-logo {
-    right: -35px;
-  }
-  .header .nav-name {
-    margin-left: 30px;
-    font-size: 1.2rem;
-  }
-  .header__logo-box #taste-logo {
-    -webkit-animation: slideInUp 1.2s;
-    animation: slideInUp 1.2s;
-  }
-  .header__logo-box #icon-chef {
-    width: 35px;
-    top: 10px;
-  }
-  .header__logo-box #icon-food {
-    width: 35px;
-    top: 40%;
-    opacity: 0.8;
-  }
-  .header__logo-box #icon-utensils {
-    width: 40px;
-    bottom: 5%;
-    right: -38px;
-  }
+
 
   section.section-contact {
     min-height: 400px;

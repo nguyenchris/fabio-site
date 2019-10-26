@@ -1,0 +1,22 @@
+.scroll_down {
+  position: absolute;
+  z-index: 3;
+  bottom: 6%;
+  left: 50%;
+  margin-left: -16px;
+  width: 32px;
+  height: 20px;
+  font-size: 32px;
+  text-align: center;
+  color: #fff;
+  -webkit-animation: upDown 1.85s infinite;
+  animation: upDown 1.85s infinite;
+  @media only screen and (max-width: 780px) {
+    bottom: 10%;
+  }
+
+  // iPhone X and XS
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+    bottom: 21.5%;
+  }
+}
