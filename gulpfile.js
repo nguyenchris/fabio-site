@@ -77,10 +77,10 @@ function styles() {
 
   return gulp
     .src('./assets/sass/**/*.scss')
-    .pipe(sourcemaps.init())
+    // .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss(plugins))
-    .pipe(sourcemaps.write())
+    // .pipe(sourcemaps.write())
     .on('error', error => console.log(error.toString()))
     .pipe(gulp.dest('./assets/css/'))
     .pipe(browserSync.stream())
