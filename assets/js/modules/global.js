@@ -5,7 +5,7 @@ export default function Global() {
   $(document).ready(function() {
 
     $('.js-scroll-meals').click(function(e) {
-      $('html, body').animate({ scrollTop: $('.carousels').offset().top }, 1000);
+      $('html, body').animate({ scrollTop: $('.bio-section').offset().top }, 1000);
     });
 
 
