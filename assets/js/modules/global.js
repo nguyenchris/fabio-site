@@ -41,7 +41,6 @@ export default function Global() {
     function touchFix() {
       let touchingCarousel = false;
       let touchStartCoords = null;
-      console.log('hi')
 
       document.body.addEventListener('touchstart', e => {
         if (e.target.closest('.flickity-slider')) {
